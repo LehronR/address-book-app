@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    box-sizing: border-box;
+    background: rgba(125,151,244,0.5);
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+}
+
+.content-container {
+    max-width: 800px;
+    background-color: #170B87;
+    box-shadow: 10px 10px #4244e6;
+    border-radius: 5px;
+    padding: 2em;
+}
+
+.addressbook-header {
+    color: #7D97F4;
+    padding: 10px 0;
+    background-color: #4244e6;
+    border-radius: 5px;
+}
+
+i {
+    /*color: #170B87;*/
+    border-bottom: 5px solid #4244e6;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.addressbook-option-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid #4244e6;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    max-width: 200px;
+    color: #4244e6;
+    background-color: #7D97F4;
+}
+
+.addressbook-option-btn > p {
+    margin-bottom: 0;
+}
+
+.addressbook-option-btn:hover {
+    background-color: #170B87;
+    color: #7D97F4;
+    border: 4px solid #7D97F4;
+}
+
+.card-img {
+    background-color: #4244e6;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-body {
+    background-color: #170B87;
+}
+
+.quit-btn {
+    text-decoration: none;
+    background-color: #FF8C87;
+    color: #170B87;
+}
+
+.quit-btn:hover {
+    background-color: #FDA8A5;
+}
+
+@media screen and (max-width:768px) {
+    i {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    main {
+        height: 100%;
+    }
+}

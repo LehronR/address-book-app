@@ -1,0 +1,69 @@
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    box-sizing: border-box;
+    background: rgba(125,151,244,0.5);
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+}
+
+.main-header {
+    color: #170B87;
+    font-weight: bold;
+}
+
+.content-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.addressbook-card {
+    background-color: #170B87;
+    border-radius: 5px;
+    box-shadow: 5px 5px #4244e6;
+    color: #7D97F4;
+}
+
+p {
+    border-bottom: 2px solid #7D97F4;
+    border-right: 2px solid #7D97F4;
+}
+
+a {
+    text-decoration: none;
+}
+
+.view-btn,
+.delete-btn {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.view-btn {
+    background-color: #7D97F4;
+    color: #170B87;
+    border-color: #7D97F4;
+}
+
+.view-btn:hover {
+    background-color: #4244e6;
+    color: #7D97F4;
+    border-color: #4244e6;
+}
+
+.delete-btn {
+    background-color: #FF8C87;
+    color: #170B87;
+    border-color: #FF8C87;
+}
+
+.delete-btn:hover {
+    background-color: #FDA8A5;
+    border-color: #FDA8A5;
+}

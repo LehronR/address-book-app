@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Address Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/addressbook.css">
+</head>
+<body>
+
+<main class="main-container container d-flex justify-content-center align-items-center">
+    <div class="container m-5 content-container">
+        <div class="row mb-3 row-container">
+            <div class="col-md-12">
+                <h4 class="h4 text-center mb-3 addressbook-header">Entry Options</h4>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <a th:href="@{addressbook/person/newentry}" class="addressbook-option-btn">
+                    <i class="fa-solid fa-user-plus fa-4x"></i>
+                    <p>Add</p>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <a th:href="@{/addressbook/person/delete}" class="addressbook-option-btn ">
+                    <i class="fa-solid fa-user-slash fa-4x"></i>
+                    <p>Remove</p>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <a th:href="@{/addressbook/person/search}" class="addressbook-option-btn ">
+                    <i class="fa-solid fa-user-group fa-4x"></i>
+                    <p>Search</p>
+                </a>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <h4 class="h4 text-center mb-3 addressbook-header">Addressbook Options</h4>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <a th:href="@{/addressbook/create}" class="addressbook-option-btn">
+                    <i class="fa-regular fa-address-book fa-5x"></i>
+                    <p>Add</p>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <a th:href="@{/addressbook/search}" class="addressbook-option-btn ">
+                    <i class="fa-solid fa-address-book fa-5x"></i>
+                    <p>Search</p>
+                </a>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <a th:href="@{/addressbook/all}" class="addressbook-option-btn ">
+                    <i class="fa-solid fa-address-book fa-5x"></i>
+                    <p>View Saved</p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a th:href="@{/}" class="text-decoration-none">
+                    <button type="button" class="btn d-grid col-12 py-3 quit-btn">Quit Application</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ea3cb29135.js" crossorigin="anonymous"></script>
+</body>
+</html>
